@@ -72,117 +72,10 @@
             </h1>
           </div>
           <div class="row gx-5 justify-content-center">
-            <div class="col-lg-11 col-xl-9 col-xxl-8">
-              <!-- Project Card 1-->
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">Projeto 1</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eius at enim eum illum aperiam placeat esse? Mollitia
-                        omnis minima saepe recusandae libero, iste ad
-                        asperiores! Explicabo commodi quo itaque! Ipsam!
-                      </p>
-                    </div>
-                    <img
-                      class="img-fluid"
-                      src="https://dummyimage.com/300x400/343a40/6c757d"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Card 1-->
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">Projeto 2</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eius at enim eum illum aperiam placeat esse? Mollitia
-                        omnis minima saepe recusandae libero, iste ad
-                        asperiores! Explicabo commodi quo itaque! Ipsam!
-                      </p>
-                    </div>
-                    <img
-                      class="img-fluid"
-                      src="https://dummyimage.com/300x400/343a40/6c757d"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Card 1-->
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">Projeto 3</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eius at enim eum illum aperiam placeat esse? Mollitia
-                        omnis minima saepe recusandae libero, iste ad
-                        asperiores! Explicabo commodi quo itaque! Ipsam!
-                      </p>
-                    </div>
-                    <img
-                      class="img-fluid"
-                      src="https://dummyimage.com/300x400/343a40/6c757d"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Card 1-->
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">Projeto 4</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eius at enim eum illum aperiam placeat esse? Mollitia
-                        omnis minima saepe recusandae libero, iste ad
-                        asperiores! Explicabo commodi quo itaque! Ipsam!
-                      </p>
-                    </div>
-                    <img
-                      class="img-fluid"
-                      src="https://dummyimage.com/300x400/343a40/6c757d"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Card 2-->
-              <div class="card overflow-hidden shadow rounded-4 border-0">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">Projeto 5</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eius at enim eum illum aperiam placeat esse? Mollitia
-                        omnis minima saepe recusandae libero, iste ad
-                        asperiores! Explicabo commodi quo itaque! Ipsam!
-                      </p>
-                    </div>
-                    <img
-                      class="img-fluid"
-                      src="https://dummyimage.com/300x400/343a40/6c757d"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div
+              class="col-lg-11 col-xl-9 col-xxl-8"
+              id="container-lista-projetos"
+            ></div>
           </div>
         </div>
       </section>
@@ -201,6 +94,91 @@
           </div>
         </div>
       </section>
+
+      <!-- Detalhes projeto modal -->
+
+      <div
+        class="modal"
+        id="detalhes-projeto"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="modal-titulo"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content p-3 rounded-4">
+            <div
+              class="w-100 d-flex align-items-center justify-content-between p-2"
+            >
+              <h1 class="modal-title fs-5" id="modal-titulo">
+                Título do Projeto
+              </h1>
+              <button
+                type="button"
+                class="btn-close me-2"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-main-detalhe-projeto">
+              <div class="box-video-projeto bg-dark mb-2 rounded-4">
+                <h3 class="text-center text-gradient" id="titulo-projeto-video">
+                  Projeto X
+                </h3>
+                <iframe
+                  class="flex-grow-1"
+                  src=""
+                  title=""
+                  allowfullscreen
+                  id="iframe-video-projeto"
+                ></iframe>
+              </div>
+
+              <div class="box-detalhes-projeto bg-dark rounded-4">
+                <div
+                  class="w-100 h-60 p-4 d-flex justify-content-center align-items-center"
+                >
+                  <p
+                    id="descricao-projeto"
+                    class="m-0 text-white text-center"
+                  ></p>
+                </div>
+                <div class="w-100 h-40 container">
+                  <div class="row h-100">
+                    <div
+                      class="col d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <div class="fs-2 d-flex justify-content-center">
+                        <a class="text-gradient" href="#!"
+                          ><i class="bi bi-github"></i
+                        ></a>
+                      </div>
+                      <span class="fw-bold fs-6 mt-1 text-gradient"
+                        >Código do projeto</span
+                      >
+                    </div>
+
+                    <div
+                      class="col d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <div class="fs-2 d-flex justify-content-center">
+                        <a class="text-gradient" href="#!"
+                          ><i class="bi bi-code-slash"></i
+                        ></a>
+                      </div>
+                      <span class="fw-bold fs-6 mt-1 text-gradient"
+                        >Tecnologias Utilizadas</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Footer-->
     <footer class="bg-white py-4 mt-auto">
@@ -218,5 +196,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/projetos.js"></script>
   </body>
 </html>
