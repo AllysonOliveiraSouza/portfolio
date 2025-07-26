@@ -48,9 +48,15 @@ const tituloProjetoVideo = document.getElementById('titulo-projeto-video');
 const modalTitulo = document.getElementById('modal-titulo');
 const descricaoProjeto = document.getElementById('descricao-projeto');
 const containerListaProjetos = document.getElementById('container-lista-projetos');
+const boxGithubProjeto = document.getElementById("box-github-projeto");
+const linkGithubProjeto = document.getElementById("link-github-projeto");
+const boxTecnologiasProjeto = document.getElementById("box-tecnologias-projeto");
 
 CarregaProjetos();
 AddHandleClickBtnVerProjeto();
+boxGithubProjeto.addEventListener('click', ()=> linkGithubProjeto.click());
+boxTecnologiasProjeto.addEventListener('click',()=> alert("Em desenvolvimento :)"));
+
 
 // #region Functions
 
@@ -61,8 +67,8 @@ function CarregaDadosProjeto(id){
     tituloProjetoVideo.innerHTML = p.tituloProjeto;
     ifVideoProjeto.setAttribute('title',p.tituloProjeto);
     modalTitulo.innerHTML = 'Projeto';
-
-    descricaoProjeto.innerHTML= p.descricaoProjeto;
+    descricaoProjeto.innerHTML= p.descricaoProjeto;        
+    linkGithubProjeto.setAttribute('href', p.gitHub);    
 }
 
 function AddHandleClickBtnVerProjeto(){
@@ -83,7 +89,7 @@ function CarregaProjetos(){
             containerListaProjetos.innerHTML+=`
             <div class="card overflow-hidden shadow rounded-4 border-0${classMb}">
                 <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
+                  <div class="d-flex flex-column-reverse flex-lg-row align-items-center">
                     <div class="p-5">
                       <h2 class="fw-bolder">${projeto.titulo}</h2>
                       <p>

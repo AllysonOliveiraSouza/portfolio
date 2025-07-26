@@ -11633,8 +11633,8 @@ height: 40% !important;
 }
 
 .img-project{
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  height: 200px;
 }
 
 .modal-main-detalhe-projeto{
@@ -11656,6 +11656,14 @@ padding: 15px;
   width: 100%;
   height: 275px;
   padding: 15px;
+}
+
+#box-github-projeto, #box-tecnologias-projeto{
+  cursor: pointer;
+}
+
+#box-github-projeto:hover, #box-tecnologias-projeto:hover{
+  background-color: #141619;
 }
 
 @media (min-width: 576px) {
@@ -11732,6 +11740,11 @@ padding: 15px;
     width: 1.5vw;
     left: -2vw;
   }
+
+  .img-project{
+  width: 400px;
+  height: 350px;
+}
 }
 @media (min-width: 1200px) {
   .profile {
