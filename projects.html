@@ -109,12 +109,35 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
           <div class="modal-content p-3 rounded-4">
             <div
+              class="d-none w-100 h-100 bg-white position-absolute rounded-4 p-2"
+              id="tecnologias-projeto"
+            >
+              <div
+                class="w-100 d-flex align-items-center justify-content-between"
+              >
+                <h3 class="text-dark ms-3 mt-2">Tecnologias deste projeto</h3>
+                <button
+                  type="button"
+                  class="btn-close me-2"
+                  aria-label="Close"
+                  id="btn-fecha-tecnologias"
+                ></button>
+              </div>
+
+              <div
+                class="flex-grow-1 d-flex flex-column"
+                id="box-lista-tecnologias"
+              ></div>
+            </div>
+
+            <div
               class="w-100 d-flex align-items-center justify-content-between p-2"
             >
               <h1 class="modal-title fs-5" id="modal-titulo">
                 Título do Projeto
               </h1>
               <button
+                id="btn-close-modal"
                 type="button"
                 class="btn-close me-2"
                 data-bs-dismiss="modal"
