@@ -1,4 +1,5 @@
-const listaSkills = ["Git","Github"," C#", "Visual Basic", "Asp net MVC", "Windows Forms", ".Net Core"," .Net CLI", "Asp Net Core", "Web Api", "Autenticação"," Autorização", "REST", "Sql", "Sql Server"," MySql", "Firebird", "Sqlite", "MongoDB", "Entity Framework", "IIS"," Modelagem de dados"," RabbitMQ", "Clean Architeture", "Microsserviços", "SOLID"," Html"," Css", "Javascript", "Typescript", "Bootstrap"," Tailwind", "React", "Next Js"];
+const listaSkills = ["C#", "VB .NET", ".Net Core", "Asp Net Core", "Windows Forms", "Ef Core","Html", "Css", "Javascript","Typescript", "Bootstrap", "Tailwind", "React", "Next JS","SQL", "MySql", "Firebird", "Sqlite", "Sql Server", "Git", "Github", "Azure", "Api Rest", "POO",
+"Solid", "Microsserviços"];
 
 const divListaTechsResume = document.getElementById("div-lista-techs-resume");
 
